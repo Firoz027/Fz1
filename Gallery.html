@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+<div class="container">
+    <div class="heading">Video Gallery</div>
+    <div class="video-container">
+<div class="video">
+        <video src="1.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="2.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="3.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="4.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="5.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="6.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="7.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="8.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="9.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="10.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="11.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="12.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="13.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="14.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="15.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="16.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="17.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="18.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="19.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="20.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="21.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="22.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="23.mp4" muted></video>
+</div>
+<div class="video">
+    <video src="24.mp4" muted></video>
+</div>
+
+    </div>
+</div>
+
+<script>
+var video= document.querySelectorAll('video')
+
+video.forEach(play => play.addEventListener('click' ,() =>{
+
+ play.classList.toggle('active');
+
+ if(play.paused){
+    play.play();
+ }else{
+    play.pause();
+    play.currentTime = 0;
+ }
+
+}));
+
+
+</script>
+    
+</body>
+</html>
